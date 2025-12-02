@@ -22,5 +22,49 @@
 ### 1. Installation
 Clone the repository to your local machine:
 ```bash
-git clone [https://github.com/Karthik-Siraparapu-1/K-Script.git]
+git clone https://github.com/Karthik-Siraparapu-1/K-Script.git
 cd K-Script
+```
+
+### 2. Running a Script
+Use the Python engine to execute a K-Script file:
+
+```bash
+python src/kscript.py examples/calc.ks
+```
+
+## 📝 Syntax Guide
+
+### Variables & I/O
+```text
+name = 'K-Script'
+version = 1.0
+
+print:'Welcome to'
+print:name
+```
+
+### Logic & Loops
+**Note:** Code blocks must be indented by **4 spaces**.
+
+```text
+count = 1
+
+loop: count < 5 do:
+    print:count
+    
+    if: count = 3 do:
+        print:'Halfway there!'
+        
+    count = count + 1
+```
+
+### Functions
+```text
+def: greet_user do:
+    print:'Hello from a function!'
+
+run: greet_user
+
+
+
